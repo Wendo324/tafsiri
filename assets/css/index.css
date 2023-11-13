@@ -1,0 +1,371 @@
+
+/* Fonts */
+
+/* Normal View */
+
+/* Id's */
+
+#output{
+
+	position: absolute;
+
+	width: 100vw;
+
+	text-align: center;
+
+	top: 50vh;
+
+	margin-top: -50px;
+
+	font-size: 50px;
+
+}
+
+#microphoneButton{
+
+	position: absolute;
+	top: 70vh;
+	left: 50vw;
+	margin-top: -25px;
+	margin-left: -25px;
+	font-size: 50px;
+	transition: 0.5s;
+
+}
+
+#microphoneButton:active{
+
+	opacity: 0.5;
+
+}
+
+#microphoneButton:focus {
+
+	outline: 0;
+
+}
+
+#microphoneButton::-moz-focus-inner {
+
+  border: 0;
+
+}
+
+#microphoneError{
+
+	position: absolute;
+	width: 100vw;
+	text-align: center;
+	top: 72vh;
+	font-size: 25px;
+
+}
+
+#delayInput{
+
+	position: absolute;
+	right: 0px;
+	top: 50vh;
+	width: 300px;
+	margin-right: -50px;
+	transform: rotate(270deg);
+
+}
+
+
+
+#delayInput:focus {
+
+	outline: 0;
+
+}
+
+#delayInput::-moz-focus-inner {
+
+  border: 0;
+
+}
+
+#delayPreview{
+
+	font-size: 25px;
+	position: absolute;
+	top: 50vh;
+	margin-top: 175px;
+	right: 70px;
+	width: 56px;
+	text-align: center;
+
+}
+
+#delayTitle{
+
+	font-size: 15px;
+	position: absolute;
+	top: 50vh;
+	margin-top: -190px;
+	right: 20px;
+	width: 156px;
+	text-align: center;
+
+}
+
+#delayUp{
+
+	margin-top: -100px;
+
+}
+
+#delayDown{
+
+	margin-top: 40px;
+
+}
+
+#menuButton{
+
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-size: 50px;
+
+}
+
+#sideMenu{
+
+	position: absolute;
+	background: #232323;
+	height: 100vh;
+	width: 0px;
+	color: white;
+	transition: 0.5s;
+
+}
+
+#sideMenu *{
+
+	float: right;
+
+}
+
+#menuClose{
+
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: white;
+	font-size: 30px;
+	transition: 0.5s;
+
+}
+
+#menuClose:active{
+
+	opacity: 0.5;
+
+}
+
+#textInput{
+
+	position: absolute;
+	bottom: 5vh;
+	left: 10vw;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	resize: none;
+	width: 80vw;
+	height: 75px;
+	padding: 10px;
+	font-family: roboto-regular;
+
+}
+
+#transcriptButton{
+
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 50px;
+
+}
+
+#transcriptView{
+
+	background: #F5F5F5;
+	width: 80vw;
+	height: 80vh;
+	position: absolute;
+	left: 10vw;
+	top: 10vh;
+	border: 2px solid black;
+	border-radius: 10px;
+	overflow: auto;
+	display: none;
+
+}
+
+#transcriptView h1, h3, p{
+
+	font-weight: normal;
+	text-align: center;
+	overflow-wrap: break-word;
+
+}
+
+#transcriptView .hr1{
+
+	width: 50%;
+
+}
+
+#transcriptView .hr2{
+
+	width: 35%;
+
+}
+
+#closeTranscriptView{
+
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	color: black;
+	font-size: 30px;
+	transition: 0.5s;
+
+}
+
+#closeTranscriptView:active{
+
+	opacity: 0.5;
+
+}
+
+#titleHeader{
+
+	position: absolute;
+	font-family: roboto-light;
+	text-align: center;
+	top: 10px;
+	width: 100vw;
+
+}
+
+/* Classes */
+
+.activeMicrophone{
+
+	color: #dd222b;
+
+}
+
+.slider {
+
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;
+	background: #aaaaaa;
+	outline: none;
+	opacity: 1;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+
+}
+
+.slider::-webkit-slider-thumb {
+
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb {
+
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+
+}
+
+.delayButton{
+
+	position: absolute;
+	top: 50vh;
+	right: 20px;
+	font-size: 60px;
+	color: white;
+	transition: 0.5s;
+
+}
+
+.delayButton:active{
+
+	opacity: 0.5;
+
+}
+
+.refButton{
+
+	transition: 0.25s;
+
+}
+
+.refButton:active{
+
+	opacity: 0.5;
+
+}
+
+.onlyOnMobile{
+
+	display: none;
+
+}
+
+/* Tags */
+
+/* Other */
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+
+	/* Id's */
+
+	#textInput{
+
+		width: 70vw;
+		left: 15vw;
+		font-size: 16px;
+
+	}
+
+	#titleHeader{
+
+		font-size: 25px;
+		top: 5px;
+
+	}
+
+	/* Classes */
+
+	.onlyOnMobile{
+
+		display: block;
+
+	}
+
+	/* Tags */
+
+	/* Other */
+
+}

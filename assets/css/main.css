@@ -1,0 +1,74 @@
+
+/* Fonts */
+
+@font-face{
+
+	src: url("fonts/Roboto-Light.ttf");
+
+	font-family: roboto-light;
+
+}
+
+@font-face{
+
+	src: url("fonts/Roboto-Regular.ttf");
+
+	font-family: roboto-regular;
+
+}
+
+/* Normal View */
+
+/* Id's */
+
+/* Classes */
+
+/* Tags */
+
+body{
+
+	margin: 0px;
+
+}
+
+button{
+
+	background: rgb(0, 0, 0, 0);
+
+	padding: 0px;
+
+	border: none;
+
+}
+
+/* Other */
+
+*{
+
+	font-family: roboto-light;
+
+	outline: none;
+
+	-webkit-user-select: none;
+
+	-moz-user-select: none;
+
+	-ms-user-select: none;
+
+	user-select: none;
+
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+
+	/* Id's */
+
+	/* Classes */
+
+	/* Tags */
+
+	/* Other */
+
+}
