@@ -1,0 +1,100 @@
+
+<title>Ultimate Speech Engine</title>
+
+<link rel="shortcut icon" href="assets/img/icon.png"/>
+
+<!-- Meta data tags  -->
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+<link rel="apple-touch-icon" href="assets/img/icon.png"/>
+
+<meta name="apple-mobile-web-app-title" content="VocalRec"/>
+
+<meta name="author" content="Jak"/>
+
+<meta charset="utf-8"/>
+
+<!-- Imports -->
+
+<!-- JS -->
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/voiceRec.js"></script>
+<script src="assets/js/textToSpeech.js"></script>
+<script src="assets/js/memory.js"></script>
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="assets/css/fontawesome-free-5.6.3-web/css/all.css"/>
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- Body -->
+
+<body>
+
+	<h1 id="titleHeader">Ultimate Speech<br class="onlyOnMobile"/> Engine</h1>
+
+	<button id="microphoneButton"><i class="fa fa-microphone"></i></button>
+
+	<p id="microphoneError"></p>
+
+	<p id="output"></p>
+
+	<button id="menuButton" onclick="openMenu();"><i class="refButton fa fa-bars"></i></button>
+
+	<input id="textInput" type="text" onkeypress="enterTextInput(event);" onkeyup="updateTextInput(this);" placeholder="type here for text to speech..."></input>
+
+	<button id="transcriptButton" onclick="toggleTranscriptView();"><i class="refButton fa fa-scroll"></i></button>
+
+	<div id="transcriptView">
+
+			<h1>Transcripts</h1>
+
+			<hr class="hr1"/>
+
+			<br/>
+
+			<h3>Speech to Text</h3>
+
+			<hr class="hr2"/>
+
+			<p id="speechTranscriptOutput"></p>
+
+			<br/>
+
+			<h3>Text to Speech</h3>
+
+			<hr class="hr2"/>
+
+			<p id="textTranscriptOutput"></p>
+
+			<button id="closeTranscriptView" onclick="closeTranscriptView();"><i class="fa fa-times"></i></button>
+
+	</div>
+
+	<nav id="sideMenu">
+
+		<input type="range" min="100" max="2000" id="delayInput" class="slider" oninput="refreshDelay();"></input>
+
+		<p id="delayPreview"></p>
+
+		<button id="delayUp" class="delayButton" onclick="delayUp();"><i class="fa fa-arrow-up"></i></button>
+
+		<button id="delayDown" class="delayButton" onclick="delayDown();"><i class="fa fa-arrow-down"></i></button>
+
+		<p id="delayTitle">Delay between words (in miliseconds)</p>
+
+		<button id="menuClose" onclick="closeMenu();"><i class="fa fa-times"></i></button>
+
+	</nav>
+
+</body>
